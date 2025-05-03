@@ -32,7 +32,7 @@ class TPQueue {
         }
 
         Node* current = head;
-        while (current->next != nullptr && 
+        while (current->next != nullptr &&
                current->next->data.prior >= item.prior) {
             current = current->next;
         }
@@ -64,7 +64,7 @@ class TPQueue {
         }
     }
 
-    TPQueue(const TPQueue&) = delete; 
+    TPQueue(const TPQueue&) = delete;
     TPQueue& operator=(const TPQueue&) = delete;
 };
 
